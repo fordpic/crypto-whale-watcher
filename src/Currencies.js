@@ -11,16 +11,16 @@ const Currencies = () => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
-				console.log(res);
+				// console.log(res);
 				setCurrency(res);
 			});
 	};
 	useEffect(() => {
 		getCurrency();
 	}, []);
-	console.log(currency);
+	// console.log(currency);
 	return (
-		<div className='coin-info'>
+		<div className='coin-list'>
 			<h1>Top 100 Coins by Market Cap</h1>
 			{currency.map((coin) => {
 				return (

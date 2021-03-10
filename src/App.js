@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Currencies from './Currencies';
+import CurrencyInfo from './CurrencyInfo';
 import About from './About';
 import Contact from './Contact';
 import './App.css';
@@ -32,10 +33,10 @@ function App() {
 
       <main>
         <Route path="/" exact component={Home} />
-        <Route path="/currencies" component={Currencies} />
+        <Route path="/currencies" exact component={Currencies} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-
+        <Route path="/currencies/:id" render={(routerProps) => <CurrencyInfo match={routerProps.match} />} />
 
 
       </main>
