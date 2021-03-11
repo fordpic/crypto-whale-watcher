@@ -62,8 +62,19 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     background: ${({ theme }) => theme.primaryDark};
     color: ${({ theme }) => theme.primaryLight};
+    opacity: 0.8
 }
+
 h1, h2 {
     background-color: grey;
+    box-shadow: ${({ theme }) => theme.primaryShadow};
+}
+
+.parent {
+    justify-content: center;
+    text-align: center;
+    background: ${({ theme }) => theme.primaryDark};
+    color: ${({ theme }) => theme.primaryLight};
+    opacity: 0.8
 }
 `;
