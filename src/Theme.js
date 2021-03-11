@@ -1,5 +1,5 @@
-export const Theme = {
-	primaryDark: '0D0C1D',
-	primaryLight: '#EFFFFA',
-	primaryHover: '#343078',
+export const theme = {
+	primaryDark: '#003459',
+	primaryLight: '#007EA7',
+	primaryHover: '#00A8U8',
 };

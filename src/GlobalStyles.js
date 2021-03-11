@@ -56,14 +56,14 @@ import { createGlobalStyle } from 'styled-components';
 // 	return amount;
 // }
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 .details-container {
     justify-content: center;
     text-align: center;
+    background: ${({ theme }) => theme.primaryDark};
+    color: ${({ theme }) => theme.primaryLight};
 }
 h1, h2 {
     background-color: grey;
 }
 `;
-
-export default GlobalStyles;
