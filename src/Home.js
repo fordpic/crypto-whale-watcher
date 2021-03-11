@@ -18,31 +18,33 @@ const Home = () => {
 		getHomeInfo();
 	}, []);
 
-	// console.log(homeInfo.data)
+	console.log(homeInfo.data);
 
 	return (
 		<div className='home-info'>
 			{homeInfo ? (
 				<div>
 					<p>
-						Welcome to Crypto Whale Watcher! <br></br>
-						<br></br>Below you will see the current state of Defi (Decentralized
-						Finance) as a whole, but please select any option from above to go
+						Welcome to Crypto Whale Watcher!
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>Below you will see the current state of Defi (Decentralized Finance) - take a look below 
 						ahead and get started!
 					</p>
 					<br></br>
 					<p>DeFi Dominance: {homeInfo?.data?.defi_dominance}%</p>
+					<br></br>
 					<p>DeFi Market Cap: {homeInfo?.data?.defi_market_cap}%</p>
-					<p>DeFi To Ethereum Ratio: {homeInfo?.data?.defi_to_eth_ratio}%</p>
-					<p>Ethereum Market Cap: {homeInfo?.data?.defi_dominance}%</p>
+					<br></br>
 					<p>Top Coin (Current): {homeInfo?.data?.top_coin_name}</p>
+					<br></br>
 					<p>
 						Trading Volume (last 24 hours): $
 						{homeInfo?.data?.trading_volume_24h}
 					</p>
 				</div>
 			) : null}
-			;
 		</div>
 	);
 };

@@ -1,9 +1,14 @@
-nav {
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-};
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
+nav {
+	background: grey;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.parent {
+	font-family: 'DotGothic16', sans-serif;
+}
