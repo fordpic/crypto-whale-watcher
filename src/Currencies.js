@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './GlobalStyles';
+import { theme } from './Theme';
 
 const Currencies = () => {
 	const [currency, setCurrency] = useState([]);
@@ -20,20 +23,27 @@ const Currencies = () => {
 	}, []);
 	// console.log(currency);
 	return (
-		<div className='coin-list'>
-			<h1>Top 100 Coins by Market Cap</h1>
-			{currency.map((coin) => {
-				return (
-					<div key={coin.name}>
-						<Link to={`/currencies/${coin.name}`}>
-							<h1>
-								{coin.name} - {coin.symbol}
-							</h1>
-						</Link>
-					</div>
-				);
-			})}
-		</div>
+		<ThemeProvider theme={theme}>
+			<>
+				<GlobalStyles />
+				<div className='coin-list'>
+					<h1>Top 100 Coins by Market Cap</h1>
+					{currency.map((coin) => {
+						return (
+							<div key={coin.name}>
+								<Link
+									to={`/currencies/${coin.name}`}
+									style={{ textDecoration: 'none' }}>
+									<h1>
+										{coin.name} - {coin.symbol}
+									</h1>
+								</Link>
+							</div>
+						);
+					})}
+				</div>
+			</>
+		</ThemeProvider>
 	);
 };
 

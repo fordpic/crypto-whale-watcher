@@ -6,12 +6,20 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	padding: 20 20 20 20px;
 	text-decoration: none;
-	margin-bottom: 0;
-	margin: 0 !important;
+}
+
+nav a:hover {
+	background-color: pink;
 }
 
 .parent {
 	font-family: 'Neuton', serif;
+}
+
+.whale-pic {
+	justify-content: center;
+	max-width: 50vw;
+	max-height: 75vh;
 }

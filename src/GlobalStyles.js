@@ -57,6 +57,11 @@ import { createGlobalStyle } from 'styled-components';
 // }
 
 export const GlobalStyles = createGlobalStyle`
+
+* {
+    margin: 0;
+}
+
 .details-container {
     justify-content: center;
     text-align: center;
@@ -66,7 +71,13 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
 }
 
-
+.coin-list {
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background-color: #99FFCC;
+    opacity: 0.8
+}
 
 .home-info {
     justify-content: center;
@@ -77,12 +88,15 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 .home-header {
-    background-color: #D1D1E0;
-    background: #D1D1E0;
+ 
     margin: 0;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    color: 
 }
 
-body, .coin-info {
+body, .coin-details {
     height: 100vh;
 }
 
@@ -102,6 +116,14 @@ body, .coin-info {
     background-color: #99FFCC;
     opacity: 0.8;
     height: 100vh;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    font-size: 35px;
 }
 
 `;

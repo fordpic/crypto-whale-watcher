@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './CurrencyInfo.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './GlobalStyles';
 import { theme } from './Theme';
