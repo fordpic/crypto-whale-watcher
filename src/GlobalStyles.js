@@ -95,4 +95,13 @@ body, .coin-info {
     height: 100vh;
 }
 
+#contact {
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background-color: #99FFCC;
+    opacity: 0.8;
+    height: 100vh;
+}
+
 `;
