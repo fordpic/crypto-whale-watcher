@@ -60,21 +60,39 @@ export const GlobalStyles = createGlobalStyle`
 .details-container {
     justify-content: center;
     text-align: center;
-    background: ${({ theme }) => theme.primaryDark};
-    color: ${({ theme }) => theme.primaryLight};
-    opacity: 0.8
+    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background-color: #99FFCC;
+    opacity: 0.8;
+    height: 100vh;
 }
 
-h1, h2 {
-    background-color: grey;
-    box-shadow: ${({ theme }) => theme.primaryShadow};
-}
 
-.parent {
+
+.home-info {
     justify-content: center;
     text-align: center;
-    background: ${({ theme }) => theme.primaryDark};
-    color: ${({ theme }) => theme.primaryLight};
+    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background-color: #99FFCC;
     opacity: 0.8
 }
+
+.home-header {
+    background-color: #D1D1E0;
+    background: #D1D1E0;
+    margin: 0;
+}
+
+body, .coin-info {
+    height: 100vh;
+}
+
+#about {
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background-color: #99FFCC;
+    opacity: 0.8;
+    height: 100vh;
+}
+
 `;

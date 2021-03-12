@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { theme } from './Theme';
 
 const Home = () => {
 	const [homeInfo, setHomeInfo] = useState([]);
@@ -23,26 +24,25 @@ const Home = () => {
 	return (
 		<div className='home-info'>
 			{homeInfo ? (
-				<div>
-					<p>
-						Welcome to Crypto Whale Watcher!
+				<div className='more-home'>
+					<header className='home-header'>
+						<h1>Welcome to Crypto Whale Watcher!</h1>
+					</header>
+					<body>
+						Below you will see the current state of Defi (Decentralized Finance)
+						- take a look at the options above to get started!
 						<br></br>
+						<p>DeFi Dominance: {homeInfo?.data?.defi_dominance}%</p>
 						<br></br>
+						<p>DeFi Market Cap: {homeInfo?.data?.defi_market_cap}%</p>
 						<br></br>
-						<br></br>Below you will see the current state of Defi (Decentralized Finance) - take a look below 
-						ahead and get started!
-					</p>
-					<br></br>
-					<p>DeFi Dominance: {homeInfo?.data?.defi_dominance}%</p>
-					<br></br>
-					<p>DeFi Market Cap: {homeInfo?.data?.defi_market_cap}%</p>
-					<br></br>
-					<p>Top Coin (Current): {homeInfo?.data?.top_coin_name}</p>
-					<br></br>
-					<p>
-						Trading Volume (last 24 hours): $
-						{homeInfo?.data?.trading_volume_24h}
-					</p>
+						<p>Top Coin (Current): {homeInfo?.data?.top_coin_name}</p>
+						<br></br>
+						<p>
+							Trading Volume (last 24 hours): $
+							{homeInfo?.data?.trading_volume_24h}
+						</p>
+					</body>
 				</div>
 			) : null}
 		</div>

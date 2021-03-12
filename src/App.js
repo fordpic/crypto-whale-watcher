@@ -18,19 +18,19 @@ function App() {
 				<div className='parent'>
 					<nav>
 						<Link to='/' style={{ textDecoration: 'none' }}>
-							<h1>Home</h1>
+							<h3>Home</h3>
 						</Link>
 
 						<Link to='/currencies' style={{ textDecoration: 'none' }}>
-							<h1>Cryptocurrencies</h1>
+							<h3>Cryptocurrencies</h3>
 						</Link>
 
 						<Link to='/about' style={{ textDecoration: 'none' }}>
-							<h1>About</h1>
+							<h3>About</h3>
 						</Link>
 
 						<Link to='/contact' style={{ textDecoration: 'none' }}>
-							<h2>Contact</h2>
+							<h3>Contact</h3>
 						</Link>
 					</nav>
 
