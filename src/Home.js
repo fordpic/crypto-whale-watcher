@@ -55,8 +55,6 @@ const Home = () => {
 						</h3>
 						<br></br>
 						<br></br>
-						<br></br>
-						<br></br>
 						<img
 							src='http://clipart-library.com/data_images/25066.gif'
 							alt='whale'></img>

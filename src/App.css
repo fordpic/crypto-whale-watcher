@@ -23,3 +23,7 @@ nav a:hover {
 	max-width: 50vw;
 	max-height: 75vh;
 }
+
+nav a {
+	padding: 10px;
+}

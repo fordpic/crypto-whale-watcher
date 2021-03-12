@@ -74,7 +74,7 @@ export const GlobalStyles = createGlobalStyle`
 .coin-list {
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background: radial-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
     opacity: 0.8
 }
@@ -82,7 +82,7 @@ export const GlobalStyles = createGlobalStyle`
 .home-info {
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background: radial-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
     opacity: 0.8
 }
@@ -93,7 +93,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100vw;
     justify-content: center;
     text-align: center;
-    color: 
+    padding: 15px; 
 }
 
 body, .coin-details {
@@ -103,7 +103,7 @@ body, .coin-details {
 #about {
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background: radial-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
     opacity: 0.8;
     height: 100vh;
@@ -112,7 +112,7 @@ body, .coin-details {
 #contact {
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgb(0, 51, 26), transparent);
+    background: radial-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
     opacity: 0.8;
     height: 100vh;
