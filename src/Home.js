@@ -39,11 +39,16 @@ const Home = () => {
 						<br></br>
 						<h3>
 							DeFi Dominance (% of overall market):{' '}
-							{homeInfo?.data?.defi_dominance}%
+							{parseFloat(homeInfo?.data?.defi_dominance).toFixed(2)}%
 						</h3>
 						<br></br>
 						<br></br>
-						<h3>DeFi Market Cap: {homeInfo?.data?.defi_market_cap}%</h3>
+						<h3>
+							DeFi Market Cap: $
+							{Number(
+								parseFloat(homeInfo?.data?.defi_market_cap).toFixed(2)
+							).toLocaleString('en')}
+						</h3>
 						<br></br>
 						<br></br>
 						<h3>Top Coin (Current): {homeInfo?.data?.top_coin_name}</h3>
@@ -51,7 +56,9 @@ const Home = () => {
 						<br></br>
 						<h3>
 							Trading Volume (last 24 hours): $
-							{homeInfo?.data?.trading_volume_24h}
+							{Number(
+								parseFloat(homeInfo?.data?.trading_volume_24h).toFixed(2)
+							).toLocaleString('en')}
 						</h3>
 						<br></br>
 						<br></br>

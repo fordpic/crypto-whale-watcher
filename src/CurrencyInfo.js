@@ -74,7 +74,7 @@ const CurrencyInfo = ({ match }) => {
 							<h2>All Time Low Date: {coinInfo.market_data?.atl_date.usd}</h2>
 						</div>
 						<div className='description'>
-							<p>{coinInfo.description?.en}</p>
+							<p className='coin-text'>{coinInfo.description?.en}</p>
 						</div>
 					</div>
 				</div>

@@ -13,9 +13,9 @@ const Contact = () => {
 					To contact me and suggest improvements OR to tell me the app is
 					great/horrendous, please email me at: <br></br>
 				</p>
-				<Github />
+				{/* <Github />
 				<Mail />
-				<Linkedin />
+				<Linkedin /> */}
 			</>
 		</ThemeProvider>
 	);

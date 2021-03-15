@@ -68,8 +68,27 @@ export const GlobalStyles = createGlobalStyle`
     background: linear-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
     opacity: 0.8;
-    height: 100vh;
+    height: 100%;
 }
+
+main, .parent {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 
 .coin-list {
     justify-content: center;
@@ -96,9 +115,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: 15px; 
 }
 
-body, .coin-details {
-    height: 100vh;
-}
 
 #about {
     justify-content: center;
