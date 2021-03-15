@@ -9,7 +9,7 @@ React, CSS, CoinGecko API, React-Feather
 
 ### Getting Started
 
-Open the app to the home page and navigate to whichever landing page you want at the top, based on the information you are looking for!
+Open the app to the home page using this link (https://crypto-whale-watcher.herokuapp.com/) and navigate to whichever landing page you want at the top, based on the information you are looking for!
 
 ### Contribution Guidelines
 
