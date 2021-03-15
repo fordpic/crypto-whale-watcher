@@ -39,18 +39,29 @@ const CurrencyInfo = ({ match }) => {
 						<div className='price-change-24'>
 							<h2>
 								Change in Price (last 24 hours): $
-								{coinInfo.market_data?.price_change_24h}{' '}
-								{coinInfo.market_data?.price_change_percentage_24h}%
+								{parseFloat(coinInfo.market_data?.price_change_24h).toFixed(2)}{' '}
+								{parseFloat(
+									coinInfo.market_data?.price_change_percentage_24h
+								).toFixed(2)}
+								%
 							</h2>
 						</div>
 						<div className='price-change-7'>
 							<h2>
 								Change in Price (last 7 days):{' '}
-								{coinInfo.market_data?.price_change_percentage_7d}%
+								{parseFloat(
+									coinInfo.market_data?.price_change_percentage_7d
+								).toFixed(2)}
+								%
 							</h2>
 						</div>
 						<div className='market-cap'>
-							<h2>Market Cap: {coinInfo.market_data?.market_cap.usd}</h2>
+							<h2>
+								Market Cap:{' '}
+								{Number(coinInfo.market_data?.market_cap.usd).toLocaleString(
+									'en'
+								)}
+							</h2>
 						</div>
 						<div className='market-cap-rank'>
 							<h2>Market Cap Rank: {coinInfo.market_data?.market_cap_rank}</h2>
@@ -58,7 +69,11 @@ const CurrencyInfo = ({ match }) => {
 						<div className='market-cap-change'>
 							<h2>
 								Change in Market Cap (last 24 hours):{' '}
-								{coinInfo.market_data?.market_cap_change_24h}
+								{Number(
+									parseFloat(
+										coinInfo.market_data?.market_cap_change_24h
+									).toFixed(2)
+								).toLocaleString('en')}
 							</h2>
 						</div>
 						<div className='ath'>
@@ -68,7 +83,10 @@ const CurrencyInfo = ({ match }) => {
 							<h2>All Time High Date: {coinInfo.market_data?.ath_date.usd}</h2>
 						</div>
 						<div className='atl'>
-							<h2>All Time Low: ${coinInfo.market_data?.atl.usd}</h2>
+							<h2>
+								All Time Low: $
+								{parseFloat(coinInfo.market_data?.atl.usd).toFixed(2)})
+							</h2>
 						</div>
 						<div className='atl-date'>
 							<h2>All Time Low Date: {coinInfo.market_data?.atl_date.usd}</h2>
