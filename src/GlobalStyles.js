@@ -76,11 +76,11 @@ main, .parent {
     min-height: 100%;
 }
 
-
 html, body {
   padding: 0;
   margin: 0;
 }
+
 html {
   height: 100%;
 }
@@ -88,7 +88,6 @@ html {
 body {
   min-height: 100%;
 }
-
 
 .coin-list {
     justify-content: center;
@@ -119,7 +118,6 @@ body {
 .coin-text {
     font-size: 24px;
 }
-
 
 #about {
     justify-content: center;

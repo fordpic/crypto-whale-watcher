@@ -16,6 +16,9 @@ const Currencies = () => {
 			.then((res) => {
 				// console.log(res);
 				setCurrency(res);
+			})
+			.catch((err) => {
+				console.error(err);
 			});
 	};
 	useEffect(() => {

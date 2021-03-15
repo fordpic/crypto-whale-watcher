@@ -11,8 +11,10 @@ const Home = () => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
-				// console.log(res);
 				setHomeInfo(res);
+			})
+			.catch((err) => {
+				console.error(err);
 			});
 	};
 	useEffect(() => {
@@ -64,7 +66,8 @@ const Home = () => {
 						<br></br>
 						<img
 							src='http://clipart-library.com/data_images/25066.gif'
-							alt='whale'></img>
+							alt='whale'
+						/>
 					</body>
 				</div>
 			) : null}
