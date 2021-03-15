@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import whale from './whaleman.gif'
+
 
 const Home = () => {
 	const [homeInfo, setHomeInfo] = useState([]);
@@ -20,7 +22,6 @@ const Home = () => {
 		getHomeInfo();
 	}, []);
 
-	console.log(homeInfo.data);
 
 	return (
 		<div className='home-info'>
@@ -64,7 +65,7 @@ const Home = () => {
 						<br></br>
 						<br></br>
 						<img
-							src='http://clipart-library.com/data_images/25066.gif'
+							src={whale}
 							alt='whale'
 						/>
 					</body>
