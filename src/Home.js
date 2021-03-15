@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { theme } from './Theme';
 
 const Home = () => {
 	const [homeInfo, setHomeInfo] = useState([]);

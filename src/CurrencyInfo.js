@@ -11,7 +11,6 @@ const CurrencyInfo = ({ match }) => {
 	useEffect(() => {
 		const coinName = match.params.id.toLowerCase();
 		const url = `${coinGeckoURL}${coinName}`;
-		// console.log(coinName);
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
