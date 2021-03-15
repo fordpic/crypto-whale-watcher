@@ -103,7 +103,8 @@ body {
     text-align: center;
     background: radial-gradient(rgb(0, 51, 26), transparent);
     background-color: #99FFCC;
-    opacity: 0.8
+    opacity: 0.8;
+    height: 100vh;
 }
 
 .home-header {
@@ -113,6 +114,10 @@ body {
     justify-content: center;
     text-align: center;
     padding: 15px; 
+}
+
+.coin-text {
+    font-size: 24px;
 }
 
 

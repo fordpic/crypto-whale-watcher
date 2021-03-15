@@ -77,7 +77,10 @@ const CurrencyInfo = ({ match }) => {
 							</h2>
 						</div>
 						<div className='ath'>
-							<h2>All Time High: ${coinInfo.market_data?.ath.usd}</h2>
+							<h2>
+								All Time High: $
+								{Number(coinInfo.market_data?.ath.usd).toLocaleString('en')}
+							</h2>
 						</div>
 						<div className='ath-date'>
 							<h2>All Time High Date: {coinInfo.market_data?.ath_date.usd}</h2>
@@ -85,7 +88,7 @@ const CurrencyInfo = ({ match }) => {
 						<div className='atl'>
 							<h2>
 								All Time Low: $
-								{parseFloat(coinInfo.market_data?.atl.usd).toFixed(2)})
+								{parseFloat(coinInfo.market_data?.atl.usd).toFixed(2)}
 							</h2>
 						</div>
 						<div className='atl-date'>
